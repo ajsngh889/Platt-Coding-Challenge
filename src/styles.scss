@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    tr, td, th {
+        border: 1px solid #ccc;
+        padding: 5px;
+        a {
+            text-decoration: none;
+        }
+    }
+}

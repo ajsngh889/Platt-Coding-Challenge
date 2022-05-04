@@ -1,0 +1,22 @@
+<h2>Planet Residents</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Eye Color</th>
+        <th>Hair Color</th>
+        <th>Skin Color</th>
+        <th>Gender</th>
+        <th>Height</th>
+        <th>Weight</th>
+    </tr>
+    <tr *ngFor="let resident of residentList ; let i = index">
+            <td>{{resident.name}}</td>
+            <td>{{resident.eye_Color}}</td>
+            <td>{{resident.hair_Color}}</td>
+            <td>{{resident.skin_Color}}</td>
+            <td>{{resident.gender}}</td>
+            <td>{{resident.height}}</td>
+            <td>{{resident.mass}}</td>
+    </tr>
+</table>

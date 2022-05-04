@@ -1,0 +1,14 @@
+<h2>All Vehicles</h2>
+
+<table>
+    <tr>
+        <th>Manufacturer Name</th>
+        <th>Vehicle Count</th>
+        <th>Average Cost</th>
+    </tr>
+    <tr *ngFor="let vehicle of vehicleList">
+        <td>{{vehicle.manufacturerName}}</td>
+        <td>{{vehicle.vehicleCount}}</td>
+        <td>{{vehicle.averageCost}}</td>
+    </tr>
+</table>

@@ -1,0 +1,28 @@
+<h2>All Planets</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Population</th>
+        <th>Diameter</th>
+        <th>Terrain</th>
+        <th>Orbital Period</th>
+        <th>Length Of Year</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let planet of planetList ; let i = index">
+        <td>{{planet.name}}</td>
+        <td>{{planet.population}}</td>
+        <td>{{planet.diameter}}</td>
+        <td>{{planet.terrain}}</td>
+        <td>{{planet.orbital_period}}</td>
+        <td>{{planet.lengthOfYear}}</td>
+        <td>
+            <a routerLink="/planetDetail/{{i+1}}">Planet Details</a>
+        </td>
+        <td>
+            <a routerLink="/planetResidents/{{planet.name}}">Resident Details</a>
+        </td>
+    </tr>
+</table>
